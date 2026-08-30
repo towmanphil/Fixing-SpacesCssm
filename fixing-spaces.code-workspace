@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "fixing-spaces",
+			"path": "../../../../../../OneDrive/Desktop/New folder/towmanphil/fixing-spaces"
+		}
+	],
+	"settings": {
+		"gitlens.ai.defaultAgent": "ide-chat"
+	}
+}

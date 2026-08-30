@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Asset Record · Fixing Spaces</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="asset-record.css">
+  <link rel="stylesheet" href="auger.css">
+</head>
+<body data-page="asset">
+  <div class="promo-bar"><span>MAINTENANCE OPERATIONS</span><span>Facility Grounds · PIT Fleet · Inventory</span></div>
+  <header class="brand-header"><img class="fixing-spaces-logo" src="fixing-spaces-logo-final.png" alt="Fixing Spaces"><div class="header-tools">⌕　▣</div></header>
+  <nav class="primary-nav"><a href="index.html">Home</a><a class="active" href="assets.html">Assets</a><a href="inventory.html">Parts Lookup</a><a href="documents.html">Documents</a><a href="safety.html">Safety</a></nav>
+  <main class="app-shell">
+    <a class="back-link" href="assets.html">← Back to Assets</a>
+    <section id="asset-detail" class="asset-detail"></section>
+    <section class="card">
+      <p class="eyebrow">Individual repair record</p><h2>Record a repair</h2>
+      <form id="repair-form" class="stacked-form">
+        <label>Repair description<input id="repair-description" required maxlength="140" placeholder="Example: Door will not close completely"></label>
+        <div class="form-grid"><label>Repair cost<input id="repair-cost" type="number" min="0" step="0.01" value="0"></label><label>Status<select id="repair-status"><option>Open</option><option>Completed</option></select></label></div>
+        <button type="submit">Save repair record</button>
+      </form>
+      <p id="repair-note" class="form-note"></p>
+    </section>
+    <section class="card"><p class="eyebrow">Maintenance history</p><h2>Repairs for this asset</h2><div id="repair-history" class="history"></div></section>
+  </main>
+  <script src="app.js"></script>
+  <script src="auger-data.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Parts Lookup · Fixing Spaces</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="pages.css">
+  <link rel="stylesheet" href="inventory-search.css">
+</head>
+<body data-page="inventory">
+  <div class="promo-bar"><span>MAINTENANCE OPERATIONS</span><span>Facility Grounds · PIT Fleet · Inventory</span></div>
+  <header class="brand-header"><img class="fixing-spaces-logo" src="fixing-spaces-logo-final.png" alt="Fixing Spaces"><div class="header-tools">⌕　▣</div></header>
+  <nav class="primary-nav"><a href="index.html">Home</a><a href="assets.html">Assets</a><a class="active" href="inventory.html">Parts Lookup</a><a href="documents.html">Documents</a><a href="safety.html">Safety</a></nav>
+  <main class="app-shell">
+    <section class="page-title"><p class="eyebrow">Maintenance parts and supplies</p><h1>Parts Lookup</h1><p>Look up parts when you need them. The complete parts database stays in the background.</p></section>
+    <div class="content-grid">
+      <section class="card full-width inventory-lookup">
+        <p class="eyebrow">Part lookup</p>
+        <h2>Find a maintenance part</h2>
+        <label class="search-label" for="inventory-search">Search by internal number, manufacturer number, part name, or asset</label>
+        <input id="inventory-search" type="search" autocomplete="off" placeholder="Example: FS-H29-001 or tension cylinder">
+        <p id="inventory-search-hint" class="search-hint">Parts remain hidden until you search.</p>
+        <div id="inventory-results" class="table-wrap" hidden>
+          <table>
+            <thead><tr><th>Internal #</th><th>Part</th><th>Manufacturer #</th><th>Asset</th><th>On hand</th><th>Unit cost</th></tr></thead>
+            <tbody id="inventory-table"></tbody>
+          </table>
+        </div>
+        <p id="inventory-empty" class="empty-state" hidden>No matching maintenance parts found.</p>
+      </section>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

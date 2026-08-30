@@ -1,0 +1,51 @@
+.asset-record {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid #d9d2c7;
+  background: #faf8f4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.asset-record .asset-record-copy {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+
+.asset-record h1,
+.asset-record h3 {
+  margin: 4px 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.asset-record p {
+  margin: 0;
+}
+
+.asset-record > .status-pill,
+.asset-record .asset-record-copy p:last-child {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.asset-record > .status-pill {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+@media (max-width: 540px) {
+  .asset-record {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .asset-record > .status-pill {
+    margin-left: 0;
+  }
+}
+

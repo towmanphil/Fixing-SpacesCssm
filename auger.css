@@ -1,0 +1,5 @@
+.technical-da
+ta{margin-top:24px;padding-top:20px;border-top:1px solid #d8d1c8}.technical-data h2{font-family:Georgia,"Times New Roman",serif;font-size:1.6rem;font-weight:400;margin:5px 0 16px}.technical-data h3{font-size:1rem;margin:22px 0 7px}.technical-data p,.technical-data li{color:#4c4c4c}.technical-data ul{padding-left:20px}.technical-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.technical-grid div{padding:12px;background:#fff;border:1px solid #e4e1dc}.technical-grid strong,.technical-grid span{display:block}.technical-grid strong{font-size:.76rem;text-transform:uppercase;letter-spacing:.06em}.technical-grid span{margin-top:4px;font-size:.9rem}.source-note{font-size:.8rem;color:#777!important}@media(max-width:600px){.technical-grid{grid-template-columns:1fr}}
+
+
+
